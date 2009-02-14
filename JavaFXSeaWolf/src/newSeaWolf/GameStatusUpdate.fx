@@ -8,14 +8,12 @@ package newSeaWolf;
 
 import javafx.animation.Timeline;
 import javafx.animation.KeyFrame;
-import java.lang.System;
 import javafx.scene.Node;
 import javafx.scene.CustomNode;
-import javafx.scene.text.Text;
 import javafx.scene.Group;
 import java.lang.Math;
-import javafx.scene.media.MediaPlayer;
 import newSeaWolf.SinkAShipGame;
+import javafx.scene.media.MediaPlayer;
 
     /**
      * @author Bojan
@@ -271,12 +269,12 @@ public class GameStatusUpdate extends CustomNode{
         }
         checking.playFromStart();
         //        shipCreate.playFromStart();
-        //        println("Sound...");
-        //        var s = Sound{};
-        //        println("Start...");
-        //        s.player.play();
-        //        println("Started...");
-        //        println("Playing...{(s.player.status==MediaPlayer.PLAYING)}"  );
+                println("Sound...");
+                var s = Sound{};
+                println("Start...");
+                s.player.play();
+                println("Started...");
+                println("Playing...{(s.player.status==MediaPlayer.PLAYING)}"  );
         
         return Group {
             content: bind [background, missiles1, missiles2, submarine1, submarine2, ships, points1, points2, gameTime, explosions, gameText]

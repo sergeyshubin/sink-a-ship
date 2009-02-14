@@ -1,13 +1,11 @@
 package newSeaWolf;
 
-import java.lang.System;
 import javafx.scene.CustomNode;
 import javafx.scene.Node;
 import javafx.scene.Group;
 import javafx.animation.Interpolator;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
-import javafx.scene.paint.Color;
 import javafx.animation.Timeline;
 import javafx.animation.KeyFrame;
 import newSeaWolf.SinkAShipGame;
@@ -46,7 +44,7 @@ public class Submarine extends CustomNode{
     public function fireMissile():Boolean{
         var missileNum = missiles.missiles.size();
         if(
-        wait.running){
+        fillMissiles.running){
             return false;
         }
         if(
@@ -55,7 +53,7 @@ public class Submarine extends CustomNode{
         }
         if(
         missileNum == 0){
-            wait.playFromStart();
+            fillMissiles.playFromStart();
             return false;
         }
         fireAnim.playFromStart();
@@ -82,7 +80,7 @@ public class Submarine extends CustomNode{
         ]
     }
     
-    public var wait = Timeline {
+    public var fillMissiles = Timeline {
         repeatCount: 1
         keyFrames : [
 //            KeyFrame {

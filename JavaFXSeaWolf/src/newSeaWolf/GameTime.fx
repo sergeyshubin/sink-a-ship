@@ -5,14 +5,9 @@ import javafx.scene.Node;
 import javafx.scene.Group;
 import javafx.animation.Timeline;
 import javafx.animation.KeyFrame;
-import javafx.animation.Interpolator;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
-import javafx.scene.shape.Circle;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Text;
-import javafx.scene.text.Font;
-import java.lang.System;
+
 
 public class GameTime extends CustomNode{
     var nums:GNumber[];

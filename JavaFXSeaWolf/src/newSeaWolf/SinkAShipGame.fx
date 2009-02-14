@@ -8,10 +8,7 @@ package newSeaWolf;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.animation.Timeline;
-import javafx.animation.KeyFrame;
 import java.lang.System;
-import javafx.scene.Node;
 
 /**
  * @author Bojan

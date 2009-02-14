@@ -11,8 +11,6 @@ import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.text.Text;
 import javafx.scene.text.Font;
-import javafx.scene.input.MouseEvent;
-import newSeaWolf.GameStatusUpdate;
 import javafx.scene.paint.Color;
 
 /**
