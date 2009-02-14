@@ -1,16 +1,8 @@
 package newSeaWolf;
 
-import javafx.scene.effect.MotionBlur;
-import java.lang.System;
 import javafx.scene.CustomNode;
 import javafx.scene.Node;
 import javafx.scene.Group;
-import javafx.animation.Timeline;
-import javafx.animation.KeyFrame;
-import javafx.animation.Interpolator;
-import javafx.scene.image.ImageView;
-import javafx.scene.image.Image;
-import javafx.scene.paint.Color;
 
 public class Missiles extends CustomNode{
     public var x: Number;
