@@ -15,7 +15,7 @@ import javafx.scene.media.MediaError;
 public class Sound {
 
     var media = Media{
-        source: "G:/hormpipe.mp3"
+        source: "{__DIR__}sound/hormpipe.mp3"
         onError: function(e:MediaError) {
                     println("got a media error {e}");
                 }
