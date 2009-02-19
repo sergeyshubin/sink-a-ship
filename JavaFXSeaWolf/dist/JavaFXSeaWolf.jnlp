@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://sink-a-ship.googlecode.com/svn/trunk/JavaFXSeaWolf/dist" href="JavaFXSeaWolf.jnlp">
+    <information>
+        <title>JavaFXSinkAShip</title>
+        <vendor>Bojan</vendor>
+        <homepage href="http://chobicus.blogspot.com"/>
+        <description>JavaFXSinkAShip</description>
+        <offline-allowed/>
+        <shortcut>
+            <desktop/>
+        </shortcut>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.5+"/>
+        <property name="jnlp.packEnabled" value="true"/>
+        <property name="jnlp.versionEnabled" value="true"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.1/javafx-rt.jnlp"/>
+        <jar href="JavaFXSeaWolf.jar" main="true"/>
+    </resources>
+    <application-desc main-class="newSeaWolf.SinkAShipGame">
+    </application-desc>
+</jnlp>
