@@ -269,12 +269,12 @@ public class GameStatusUpdate extends CustomNode{
         }
         checking.playFromStart();
         //        shipCreate.playFromStart();
-                println("Sound...");
-                var s = Sound{};
-                println("Start...");
-                s.player.play();
-                println("Started...");
-                println("Playing...{(s.player.status==MediaPlayer.PLAYING)}"  );
+//                println("Sound...");
+//                var s = Sound{};
+//                println("Start...");
+//                s.player.play();
+//                println("Started...");
+//                println("Playing...{(s.player.status==MediaPlayer.PLAYING)}"  );
         
         return Group {
             content: bind [background, missiles1, missiles2, submarine1, submarine2, ships, points1, points2, gameTime, explosions, gameText]
