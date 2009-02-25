@@ -8,6 +8,9 @@ import javafx.animation.Timeline;
 import javafx.animation.Interpolator;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
+/**
+ * submarine missile
+ */
 
 public class Missle extends CustomNode{
     public var exploded = false;

@@ -3,6 +3,10 @@ package newSeaWolf;
 import javafx.scene.CustomNode;
 import javafx.scene.Node;
 import javafx.scene.Group;
+/**
+ * player score
+ * trigger demo same as in GameTime class
+ */
 
 public class Score extends CustomNode{
     public var prefix:String;
@@ -11,8 +15,7 @@ public class Score extends CustomNode{
         var pointsString = points.toString();
         var i = 0;
         var lenght = pointsString.length();
-        while(
-        i < lenght){
+        while(i < lenght){
             var gnum = GNumber{
                 prefix:prefix
                 num:pointsString.substring(i, i + 1)

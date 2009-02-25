@@ -12,12 +12,7 @@ import javafx.scene.Node;
 import javafx.scene.text.Text;
 import javafx.scene.text.Font;
 import javafx.scene.paint.Color;
-
-/**
- * @author Bojan
- */
-
-
+//could be better
 package class GameText extends CustomNode {
 
 

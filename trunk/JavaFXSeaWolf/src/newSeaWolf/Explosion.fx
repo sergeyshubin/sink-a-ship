@@ -7,6 +7,9 @@ import javafx.animation.Timeline;
 import javafx.animation.KeyFrame;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
+/**
+ * Boat explosion
+ */
 
 public class Explosion extends CustomNode{
     package var x: Number;
@@ -33,6 +36,7 @@ public class Explosion extends CustomNode{
     }    
     
     override public function create(): Node {
+        //start animation on creation
         explosion.playFromStart();
         return Group {
             translateX: bind x

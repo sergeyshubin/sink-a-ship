@@ -8,21 +8,25 @@ import javafx.animation.KeyFrame;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 
+/**
+ * shows 60 seconds countdown
+ * demonstrates triggers
+ */
 
 public class GameTime extends CustomNode{
     var nums:GNumber[];
+
+    /* on every change of secs var, graphical nodes are changed in nums variable*/
     package var secs = 60 on replace {
         delete nums;        
         var secsString = secs.toString();
         var i = 0;
         var lenght = secsString.length();        
-        while(
-        i < lenght){
+        while(i < lenght){
             var gnum = GNumber{
                 prefix:"1_"
                 num:secsString.substring(i, i + 1)
                 x: (i + 1) * 25
-                //y: 20
             }
             insert gnum into nums;
             i=i + 1;
@@ -31,7 +35,7 @@ public class GameTime extends CustomNode{
     public-init var x: Number;
     public-init var y: Number;
     
-    
+    //secs timer
     package var tick = Timeline {
         repeatCount: secs
         keyFrames: [

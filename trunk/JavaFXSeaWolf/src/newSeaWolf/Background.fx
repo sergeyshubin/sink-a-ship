@@ -6,6 +6,10 @@ import javafx.scene.Group;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 
+/**
+ * Background for the scene
+ */
+
 public class Background extends CustomNode{
 
     override public function create(): Node {
