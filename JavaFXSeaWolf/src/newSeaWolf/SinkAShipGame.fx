@@ -10,10 +10,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.lang.System;
 
-/**
- * @author Bojan
- */
-
 public class SinkAShip {
 
 }
@@ -26,6 +22,8 @@ var gameStatusUpdate = GameStatusUpdate{
     keyboard: kb
 }
 
+// dunno why I must put kb and gameStatusUpdate this way
+// after experimenting, this is ok
 var scene = Scene {
     content: [kb, gameStatusUpdate]
 }

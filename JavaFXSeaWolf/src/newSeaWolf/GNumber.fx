@@ -5,16 +5,19 @@ import javafx.scene.Node;
 import javafx.scene.Group;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
+/**
+ * Graphical number in scene.
+ * Used for player score and game time.
+ */
 
 public class GNumber extends CustomNode{
     public var x: Number;
     public var y: Number;
-    public var num:String;
-    public var prefix:String;
+    public var num:String;//number to show
+    public var prefix:String;//determines number color
 
     
     override public function create(): Node {
-        //var imgName = {prefix}{num};//ovo ne radi!
         return Group {
             cache: true
             translateX: bind x

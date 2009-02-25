@@ -14,18 +14,16 @@ public class Submarine extends CustomNode{
 
     public var x: Number;
     public var y: Number;
-    public var imgName: String;    
+    public var imgName: String;
+
+    //ammo
     public var missiles = Missiles{
         x:30
         y:30
         imgName:"shot{imgName}"
-    }
-    //Ovde bi moglo da se metne neka otezavajuca okolnost za opaljivanje
-    //Na primer da mora da se drzi dugme za opaljivanje sekund    
+    }    
 
     override public function create(): Node {
-        //anchorX = x+getBoundsWidth()/2;
-        //anchorY = y+getBoundsHeight()/2;
         return Group {
             cache: true
             translateX: bind x
@@ -40,7 +38,9 @@ public class Submarine extends CustomNode{
         };
 
     }
-    
+
+    // returns true if there are missiles to fire.
+    // if there are no missiles, fillMissiles is started
     public function fireMissile():Boolean{
         var missileNum = missiles.missiles.size();
         if(
@@ -59,7 +59,8 @@ public class Submarine extends CustomNode{
         fireAnim.playFromStart();
         return true;        
     }
-    
+
+    //fire animation
     public var fireAnim = Timeline {
         repeatCount: 1
         keyFrames : [
@@ -79,7 +80,8 @@ public class Submarine extends CustomNode{
             },
         ]
     }
-    
+
+    //launch area needs 2s to fill
     public var fillMissiles = Timeline {
         repeatCount: 1
         keyFrames : [
@@ -99,7 +101,8 @@ public class Submarine extends CustomNode{
             }
         ]
     }   
-    
+
+    //movement
     public function changeX(change){
         if(x + change >= 0 and x + change < SinkAShipGame.SCREENW -this.boundsInLocal.width ){
             x += change;

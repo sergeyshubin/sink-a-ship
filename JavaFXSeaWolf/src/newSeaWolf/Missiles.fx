@@ -3,6 +3,9 @@ package newSeaWolf;
 import javafx.scene.CustomNode;
 import javafx.scene.Node;
 import javafx.scene.Group;
+/**
+ * submarine ammo
+ */
 
 public class Missiles extends CustomNode{
     public var x: Number;

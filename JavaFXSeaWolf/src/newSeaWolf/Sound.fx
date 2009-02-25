@@ -8,10 +8,11 @@ package newSeaWolf;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaError;
-/**
- * @author Bojan
- */
 
+/**
+ * removed sound because jar was big with music
+ * should at least add some submarine sonar sound and explosions
+ */
 public class Sound {
 
     var media = Media{

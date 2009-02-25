@@ -13,7 +13,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.KeyCode;
 
 /**
- * @author Bojan
+ * keyboard handler, 
  */
 
 public class Keyboard extends CustomNode{

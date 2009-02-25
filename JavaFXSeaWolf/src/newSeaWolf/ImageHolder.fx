@@ -7,9 +7,8 @@
 package newSeaWolf;
 import javafx.scene.image.Image;
 /**
- * @author Bojan
+ * cache for explosion images
  */
-
 public class ImageHolder{
     public var images =
     for (i in [0..24]) {

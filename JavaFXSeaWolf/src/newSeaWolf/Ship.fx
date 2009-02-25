@@ -9,7 +9,7 @@ import javafx.animation.Interpolator;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 import javafx.lang.Duration;
-
+ 
 public class Ship extends CustomNode{
     public var exploded: Boolean;
     var exploding: Boolean;
