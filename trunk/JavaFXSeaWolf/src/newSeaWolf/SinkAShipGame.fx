@@ -41,6 +41,8 @@ mainFrame = Stage {
     }
     visible: true
     scene: scene
+
 }
+kb.requestFocus();
 }
 
