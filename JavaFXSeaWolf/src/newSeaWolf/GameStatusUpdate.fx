@@ -248,12 +248,12 @@ public class GameStatusUpdate extends CustomNode{
         gameText = GameText{
             visible: bind (gameState == GameStatusUpdate.READY_TO_START)
             translateX:10
-            translateY:SinkAShipGame.SCREENH - 85
+            translateY:300
         }
         points1 = Score{
             prefix:"1_"
             points: 0
-            x: bind SinkAShipGame.SCREENW - points1.boundsInLocal.width - 20
+            x: 675;//bind SinkAShipGame.SCREENW - points1.boundsInParent.width - 20
             y: 20
         }
         points2 = Score{
