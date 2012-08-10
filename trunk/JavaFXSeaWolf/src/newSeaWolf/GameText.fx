@@ -25,8 +25,11 @@ package class GameText extends CustomNode {
                     }
                     x: 10
                     y: 30
-                    content: "press f1 to start"
-}]
+                    content: "Press F1 to start \n"
+                    "Use:\n"
+                    "letters W-A-D for green submarine\n"
+                    "arrow keys for yellow submarine"
+            }]
         };
     }
 }
